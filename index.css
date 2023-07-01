@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 10px;
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+}
+
+/* Colors */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #8B8B8B;
+    --lineColor: #D2D2D2;
+}
+
+/* Colors */
+
+/* General Classes */
+
+.flex { display: flex; }
+
+
+/* General Classes */
+
+
+
+
+/* ******** */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container { max-width: 600px; }
+
+header img {
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    flex-direction: column;
+    gap: 45px;
+    width: 100%;
+    padding-left: 46px;
+    padding-right: 46px;
+    margin-top: 48px;
+}
+
+.pizza,
+.burger,
+.beer {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5em;
+    border-bottom: 1px solid var(--lineColor);
+}
+
+.info {
+    gap: 30px;
+    align-items: center;
+}
+
+.food-info { flex-direction: column; }
+
+.food-name {
+    font-size: 2.8rem;
+    margin-bottom: 0.28em;
+    color: var(--black);
+}
+
+.ingredients {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    color: var(--gray);
+}
+
+.food-price {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+
