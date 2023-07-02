@@ -40,7 +40,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: var(--lineColor);
+    background-color: floralwhite;
 }
 
 .container { max-width: 600px; }
