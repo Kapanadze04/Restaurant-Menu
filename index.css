@@ -40,16 +40,17 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: var(--lineColor);
 }
 
-.container { 
-    max-width: 600px;}
+.container { max-width: 600px; }
 
 header img {
     width: 100%;
     position: relative;
 }
 
+/* Menu */
 .menu {
     flex-direction: column;
     gap: 45px;
@@ -92,9 +93,7 @@ header img {
     color: var(--black);
 }
 
-.add-btn img {
-    cursor: pointer;
-}
+.add-btn img { cursor: pointer; }
 
 
 
@@ -143,9 +142,18 @@ header img {
 .remove-burger,
 .remove-beer {
     font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--grayB);
     cursor: pointer;
+}
+
+.remove-pizza,
+.remove-burger,
+.remove-beer,
+.complete,
+.card-title,
+input,
+.pay-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .order-price {
@@ -189,7 +197,6 @@ header img {
     cursor: pointer;
     color: var(--white);
     font-size: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     display: none;
 }
@@ -217,7 +224,6 @@ header img {
 
 .card-title {
     font-size: 2.4rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: var(--black);
     padding-bottom: 1.92em;
@@ -229,8 +235,6 @@ input {
     font-size: 2rem;
     line-height: 32px;
     color: var(--gray75);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
     padding: 0.8em 0 0.8em 2.5em;
     outline: none;
     border-radius: 3.89px;
@@ -241,7 +245,6 @@ input {
 .pay-btn {
     width: 100%;
     font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: var(--white);
     line-height: 31.119px;
@@ -265,6 +268,9 @@ input {
 }
 
 
+
+/* Recieve Message */
+
 .message {
     justify-content: center;
     align-items: center;
@@ -283,6 +289,10 @@ input {
 }
 
 
+
+
+
+/* Media */
 
 @media(min-width: 600px) {
 

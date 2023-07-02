@@ -34,6 +34,10 @@ let price1 = 0;
 let price2 = 0;
 let price3 = 0;
 
+
+
+// Functions
+
 function orderPayed() {
     if(nameInput.value.length > 0 && cardInput.value.length > 0 && cvvInput.value.length > 0) {
         paymentCard.style.display = "none";
@@ -53,6 +57,11 @@ function goPayOrder() {
 function hideCard() {
     paymentCard.style.display = "none";
 }
+
+
+
+
+// Event Listeners
 
 addBeer.addEventListener("click", function() {
     orderTitle.style.display = "block";
