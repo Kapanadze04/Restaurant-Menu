@@ -18,11 +18,41 @@ const orderFood = document.querySelector(".order-food");
 const total = document.querySelector(".total");
 const completeBtn = document.querySelector(".complete");
 const totalPrice = document.querySelector(".total-price");
+const paymentCard = document.querySelector(".card");
+const containerApp = document.querySelector(".container");
+const payOrder = document.querySelector(".order");
+const message = document.querySelector(".message");
+const recieved = document.querySelector(".recieved");
+
+
+const nameInput = document.querySelector("#name-input");
+const cardInput = document.querySelector("#card-input");
+const cvvInput = document.querySelector("#cvv-input");
 
 
 let price1 = 0;
 let price2 = 0;
 let price3 = 0;
+
+function orderPayed() {
+    if(nameInput.value.length > 0 && cardInput.value.length > 0 && cvvInput.value.length > 0) {
+        paymentCard.style.display = "none";
+        payOrder.style.display = "none";
+        message.style.display = "flex";
+        recieved.style.display = "block";
+
+        recieved.textContent = "Thanks, " + nameInput.value + "! Your order is on its way!";
+    }
+}
+
+
+function goPayOrder() {
+    paymentCard.style.display = "block";
+}
+
+function hideCard() {
+    paymentCard.style.display = "none";
+}
 
 addBeer.addEventListener("click", function() {
     orderTitle.style.display = "block";
@@ -110,3 +140,6 @@ removePizza.addEventListener("click", function() {
         completeBtn.style.display = "none";
     }
 })
+
+
+

@@ -106,9 +106,37 @@
             </div>
 
 
-            <button class="complete">Complete order</button>
+            <button onclick="goPayOrder()" class="complete">Complete order</button>
         </section>
+
+
+
+        <div class="message flex">
+            <span class="recieved"></span>
+        </div>
+
+
+
     </div>
+
+
+    <!-- Card details -->
+    <section class="card flex">
+        <div class="top flex">
+            <h4 class="card-title">Enter card details</h4>
+            <img onclick="hideCard()" class="close-btn" src="./assets/img/close.svg" alt="close btn">
+        </div>
+        
+
+        <input type="text" name="name" id="name-input" placeholder="Enter your name">
+        <input type="text" name="card-number" id="card-input" placeholder="Enter card number">
+        <input type="text" name="card-cvv" id="cvv-input" placeholder="Enter CVV">
+
+        <button onclick="orderPayed()" class="pay-btn">Pay</button>
+    </section>
+
+
+
 
 
     <script src="./index.js"></script>
